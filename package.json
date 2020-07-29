@@ -1,0 +1,24 @@
+{
+  "name": "Blinkist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss Css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuzzy95/Blinkist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuzzy95/Blinkist/issues"
+  },
+  "homepage": "https://github.com/fuzzy95/Blinkist#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "npm-sass": "^2.3.0"
+  }
+}

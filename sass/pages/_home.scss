@@ -1,0 +1,18 @@
+.header_section {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns:25% 1fr 1fr 25%;
+    grid-template-rows: 1fr 1fr;
+
+    &_header {
+        position: relative;
+        grid-area: 1/2/2/3;
+    }
+
+    &_para {
+        position: relative;
+        grid-area: 2/2/3/3;
+    }
+}

@@ -1,0 +1,28 @@
+.nav_section {
+    background: $color_white;
+    width: 50%;
+    margin: auto;
+    min-height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_image {
+        height: 10%;
+        width: 15%;
+        cursor: pointer;
+    }
+
+    &_ul {
+        font-size: 1.7rem;
+
+        & li {
+            list-style: none;
+
+            & a {
+                text-decoration: none;
+                color: $color_blue;
+            }
+        }
+    }
+}
