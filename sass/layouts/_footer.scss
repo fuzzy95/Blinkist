@@ -4,8 +4,6 @@
     margin: auto;
 
     &_content_1 {
-        // display: grid;
-        // grid-template-rows: 2fr 1fr 1fr;
         display: flex;
         flex-direction: column;
 
@@ -80,20 +78,22 @@
 
     &_content_2 {
         &_bottom {
-            // display: grid;
-            // grid-template-columns: 1.6fr .4fr;
-
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1.3fr .7fr;
+            margin-top: 2rem;
 
             &_menu {
-                display: flex;
+                grid-area: 1/1/2/2;
 
                 & ul {
                     list-style: none;
+                    display: flex;
+                    margin-right: 1rem;
+
                     & li {
                         font-size: 1.4rem;
                         font-weight: 400;
+                        align-content: center;
 
                         &:not(:last-child):after {
                             content: "|";
@@ -113,18 +113,14 @@
             }
 
             &_logo {
+                grid-area: 1/2/2/3;
+                display: flex;
 
-                & ul {
-                    list-style: none;
-
-                    & li {
-
-                        & a {
-
-                            & img {
-                                width: 30%;
-                            }
-                        }
+                & a {
+                    display: flex;
+                    justify-content: flex-end;
+                    & img {
+                        width: 40%;
                     }
                 }
             }
