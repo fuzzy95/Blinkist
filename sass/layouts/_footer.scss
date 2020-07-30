@@ -3,7 +3,7 @@
     width: 50%;
     margin: auto;
 
-    &_content {
+    &_content_1 {
         // display: grid;
         // grid-template-rows: 2fr 1fr 1fr;
         display: flex;
@@ -47,16 +47,19 @@
                     & ul {
                         list-style: none;
                         margin-top: 1.6rem;
-                        line-height: 2.5;
 
+                        & li {
+                            line-height: 2;
+
+                            & a {
+                                font-size: 1.4rem;
+                                font-weight: 300;
+                                text-decoration: none;
+                                color: $color_grey;
     
-                        & a {
-                            font-size: 1.4rem;
-                            text-decoration: none;
-                            color: $color_grey;
-
-                            &:hover {
-                                color: $color_blue_mid;
+                                &:hover {
+                                    color: $color_blue_mid;
+                                }
                             }
                         }
                     }
@@ -67,21 +70,63 @@
         &_mid {
             display: flex;
             align-self: flex-start;
-        }
 
+            &_2,
+            &_3 {
+                margin-left: 1.9rem;
+            }
+        }
+    }
+
+    &_content_2 {
         &_bottom {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            // display: grid;
+            // grid-template-columns: 1.6fr .4fr;
+
+            display: flex;
+            justify-content: space-between;
 
             &_menu {
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
+                display: flex;
+
+                & ul {
+                    list-style: none;
+                    & li {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+
+                        &:not(:last-child):after {
+                            content: "|";
+                            margin: 0 1rem;
+                        }
+
+                        & a {
+                            text-decoration: none;
+                            color: $color_grey;
+
+                            &:hover {
+                                color: $color_blue_mid;
+                            }
+                        }
+                    }
+                }
             }
 
             &_logo {
-                position: relative;
-                display: flex;
-                flex-direction: row;
+
+                & ul {
+                    list-style: none;
+
+                    & li {
+
+                        & a {
+
+                            & img {
+                                width: 30%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
