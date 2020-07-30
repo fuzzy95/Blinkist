@@ -1,5 +1,4 @@
 .header_section {
-    color: $color_blue;
 
     &_header {
         font-family: 'Recursive', sans-serif;
@@ -11,7 +10,6 @@
         display: flex;
         flex-direction: column;
         font-size: 2rem;
-        // align-self: flex-end;
 
         &_text {
             align-self: start;
@@ -19,18 +17,8 @@
         }
 
         &_btn {
-            background: $color_green_light;
             margin-top: 3rem;
             margin-right: 15rem;
-            text-align: center;
-            padding: 1rem 2rem 1rem 2rem;
-            text-decoration: none;
-            color: $color_white;
-            font-size: 1.7rem;
-
-            &:hover {
-                background-color: $color_green;
-            }
         }
     }
 }

@@ -1,0 +1,29 @@
+.feature_section_content_para {
+    &_1,
+    &_2,
+    &_3 {
+        display: flex;
+        flex-direction: column;
+
+        &_image {
+            width: 30%;
+            align-self: center;
+            margin-bottom: 3.5rem;
+        }
+
+        &_heading {
+            font-family: 'Recursive', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            align-self: center;
+            margin-bottom: 1.5rem;
+        }
+
+        &_text {
+            font-weight: 300;
+            font-size: 1.9rem;
+            text-align: center;
+            color: $color_grey;
+        }
+    }
+}

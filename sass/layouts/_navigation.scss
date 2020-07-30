@@ -22,6 +22,15 @@
             & a {
                 text-decoration: none;
                 color: $color_blue;
+
+                &:hover::after {
+                    content: "";
+                    background-color: $color_green_light;
+                    display: block;
+                    bottom: -3rem;
+                    width: 100%;
+                    height: .2rem;
+                }
             }
         }
     }

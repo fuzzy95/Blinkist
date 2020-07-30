@@ -1,0 +1,18 @@
+ .ad_section_content {
+    padding: 0 15rem 0 15rem;
+
+    &_heading {
+        // padding: 0 9rem 0 9rem;
+
+        & span {
+            color: $color_blue_mid;
+        }
+    }
+
+    &_para {
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}

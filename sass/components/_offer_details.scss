@@ -1,0 +1,30 @@
+.offer_section_content_info {
+
+    &_timeline {
+        font-size: 2rem;
+    }
+
+    &_details {
+        background: $color_blue_light;
+        padding: 2.5rem;
+        border-radius: 3px;
+        padding: 2.7rem;
+
+        & p {
+            font-size: 1.6rem;
+            color: $color_grey;
+            flex: 2;
+            justify-self: center;
+            padding-right: 1.9rem;
+
+            & span {
+                font-weight: bold;
+            }
+        }
+
+        & a {
+            flex: 1;
+            padding: 1rem;
+        }
+    }
+}

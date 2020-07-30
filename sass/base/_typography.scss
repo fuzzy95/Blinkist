@@ -5,4 +5,17 @@ body {
     font-family: 'poppins', sans-serif;
     font-weight: 400;
     line-height: 1.7;
+    color: $color_blue;
+}
+
+.heading_secondary {
+    font-family: 'Recursive', sans-serif;
+    font-size: 3rem;
+    align-self: center;
+
+    &_center {
+        font-size: 3rem;
+        align-self: center;
+        text-align: center;
+    }
 }

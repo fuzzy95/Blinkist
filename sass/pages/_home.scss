@@ -1,7 +1,5 @@
 .header_section {
-    display: flex;
-    justify-content: center;
-    min-height: 50vh;
+    min-height: 45vh;
     display: grid;
     grid-template-columns:25% 1fr 1fr 25%;
     grid-template-rows: 1fr 1fr;
@@ -14,5 +12,75 @@
     &_para {
         position: relative;
         grid-area: 2/2/3/3;
+    }
+}
+
+.feature_section {
+    display: flex;
+    justify-self: center;
+    min-height: 50vh;
+    background: $color_white_secondary;
+     
+    &_content {
+        display: grid;
+        width: 50%;
+        min-height: 50vh;
+        margin: auto;
+
+        &_header {
+            display: flex;
+            justify-content: center;
+        }
+
+        &_para {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+.offer_section {
+    display: flex;
+    min-height: 47vh;
+    width: 50%;
+    margin: auto;
+
+    &_content {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+
+        &_header {
+            display: flex;
+            justify-content: center;
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: column;
+
+            &_timeline {
+                display: flex;
+            }
+
+            &_details {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.ad_section {
+    display: grid;
+    grid-template-columns:25% 1fr 25%;
+    justify-self: center;
+    min-height: 30vh;
+    background: $color_blue_light;
+
+    &_content {
+        grid-area: 1/2/2/3;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
     }
 }
