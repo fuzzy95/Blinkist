@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 4.6rem;
+    border-radius: .4rem;
+    overflow: hidden;
+    border: 1px solid $color_grey_light_1;
+
+    &_image {
+        & img {
+            width: 100%;
+        }
+    }
+
+    &_text {
+        background: $color_white;
+        padding: 3rem 1.5rem;
+        flex-grow: 1;
+        
+        &_header {
+            font-size: 1.9rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        &_writer {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $color_grey_light;
+            margin-bottom: 1rem;
+        }
+
+        &_details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: $color_grey_dark;
+        }
+    }
+}

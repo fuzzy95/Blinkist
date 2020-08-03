@@ -70,6 +70,28 @@
     }
 }
 
+.slider_section {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    background: $color_white_secondary;
+    
+    &_content {
+        grid-area: 1/2/2/3;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+
+        &_title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_slider {
+            display: flex;
+        }
+    }
+}
+
 .ad_section {
     display: grid;
     grid-template-columns:25% 1fr 25%;

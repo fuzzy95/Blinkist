@@ -1,11 +1,15 @@
 .footer {
     min-height: 40vh;
-    width: 50%;
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 1fr .2fr;
     margin: auto;
+    background: $color_white_secondary;
 
     &_content_1 {
         display: flex;
         flex-direction: column;
+        grid-area: 1/2/2/3;
 
         &_top {
             display: grid;
@@ -77,6 +81,8 @@
     }
 
     &_content_2 {
+        grid-area: 2/2/3/3;
+
         &_bottom {
             display: grid;
             grid-template-columns: 1.3fr .7fr;
