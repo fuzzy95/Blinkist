@@ -13,6 +13,10 @@ body {
     font-size: 3rem;
     align-self: center;
 
+    & span {
+        color: $color_black;
+    }
+
     &_center {
         font-size: 3rem;
         align-self: center;

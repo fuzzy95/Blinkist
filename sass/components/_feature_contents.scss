@@ -6,9 +6,10 @@
         flex-direction: column;
 
         &_image {
-            width: 30%;
+            width: 35%;
             align-self: center;
             margin-bottom: 3.5rem;
+            border: 2px solid $color_white;
         }
 
         &_heading {

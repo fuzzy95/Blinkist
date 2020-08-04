@@ -5,11 +5,14 @@
         font-size: 3.3rem;
         line-height: 1.1;
         align-self: center;
+        padding: 1rem;
     }
     &_para {
         display: flex;
         flex-direction: column;
         font-size: 2rem;
+        font-weight: 300;
+        padding: 1rem;
 
         &_text {
             align-self: start;
@@ -20,5 +23,35 @@
             margin-top: 3rem;
             margin-right: 15rem;
         }
+    }
+
+    &_img {
+        left: -14rem;
+        position: relative;
+        z-index: -1;
+        height: 45vh;
+        display: block;
+        background-color: $color_blue_mid;
+
+        & img {
+            
+            height: 100%;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            z-index: -2;
+            display: block;
+            width: 51vw;
+            height: 100%;
+            background-color: $color_blue_mid;
+        }
+    }
+
+    &_blue {
+        display: block;
+        background-color: $color_blue_mid;
     }
 }
