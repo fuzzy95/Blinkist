@@ -192,7 +192,7 @@ body {
   min-height: 40vh;
   display: grid;
   grid-template-columns: 25% 1fr 25%;
-  grid-template-rows: 1fr .3fr;
+  grid-template-rows: 1fr 0.3fr;
   margin: auto;
   background: #F1F6F4; }
   .footer_content_1 {
@@ -244,7 +244,7 @@ body {
     grid-area: 2/2/3/3; }
     .footer_content_2_bottom {
       display: grid;
-      grid-template-columns: 1.3fr .7fr;
+      grid-template-columns: 1.3fr 0.7fr;
       margin-top: 2rem; }
       .footer_content_2_bottom_menu {
         grid-area: 1/1/2/2; }
@@ -266,12 +266,12 @@ body {
                 color: #1775FC; }
       .footer_content_2_bottom_logo {
         grid-area: 1/2/2/3;
-        display: flex; }
-        .footer_content_2_bottom_logo a {
-          display: flex;
-          justify-content: flex-end; }
-          .footer_content_2_bottom_logo a img {
-            width: 40%; }
+        display: flex;
+        justify-content: flex-end; }
+        .footer_content_2_bottom_logo a img {
+          width: 45px;
+          height: 45px;
+          padding: 3px; }
 
 .header_section_header {
   font-family: 'Recursive', sans-serif;
